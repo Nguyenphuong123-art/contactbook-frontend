@@ -55,6 +55,15 @@
                     <span class="mt-2 badge badge-warning">
                         <i class="fas fa-edit" /> Hiệu chỉnh</span>
                 </router-link>
+                <router-link
+                    :to="{
+                        name: 'contact.add',
+                        params: { id: activeContact.id },
+                    }"
+                >
+                    <span class="mt-2 badge badge-warning">
+                        <i class="fas fa-add" /> Thêm vào</span>
+                </router-link>
             </div>
         </div>
     </div>
